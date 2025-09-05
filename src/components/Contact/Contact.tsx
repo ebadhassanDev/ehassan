@@ -188,21 +188,30 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // Replace these with your actual EmailJS service ID, template ID, and public key
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      // EmailJS configuration - Replace these with your actual EmailJS credentials
+      const serviceId = 'service_99q4uuz'; // Replace with your actual service ID
+      const templateId = 'template_x9ugvpx'; // Replace with your actual template ID
+      const publicKey = '0pUyG9fpoCR1v-X4A'; // Replace with your actual public key
       
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message
-        },
-        publicKey
-      );
+      // Initialize EmailJS
+      emailjs.init(publicKey);
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_email: 'ebadhassan.dev@gmail.com',
+        message: formData.message,
+        reply_to: formData.email
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams);
+      
+      // Clear form on success
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
       
       setStatus({
         type: 'success',
@@ -220,7 +229,7 @@ const Contact: React.FC = () => {
       console.error('Error sending email:', error);
       setStatus({
         type: 'error',
-        message: 'Something went wrong. Please try again later.'
+        message: error instanceof Error ? error.message : 'Failed to send message. Please try again later.'
       });
     } finally {
       setIsSubmitting(false);
@@ -277,7 +286,7 @@ const Contact: React.FC = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Hi Hassan, I'd like to chat about..."
+                placeholder="Hi Ebad, I'd like to chat about..."
                 disabled={isSubmitting}
                 required
               />

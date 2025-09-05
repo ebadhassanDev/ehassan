@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+const resumeFile = '/Resume/Ebad_Hassan.pdf';
+
 const Nav = styled.nav`
   position: fixed;
   top: 0;
@@ -252,9 +254,10 @@ const Navbar: React.FC = () => {
             </NavItem>
           ))}
           <ResumeButton
-            href="/resume.pdf"
+            href={resumeFile}
             target="_blank"
             rel="noopener noreferrer"
+            download="Ebad_Hassan_Resume.pdf"
             onClick={closeMenu}
           >
             Resume
