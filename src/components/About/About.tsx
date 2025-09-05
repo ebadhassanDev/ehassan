@@ -162,7 +162,7 @@ const About: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <p>
-                Hello! I'm Hassan, a passionate C# developer with a strong foundation in building robust and scalable web applications. 
+                Hello! I'm Ebad Hassan, a passionate C# developer with a strong foundation in building robust and scalable web applications. 
                 My journey in software development started with a curiosity about how things work, which led me to pursue a career in technology.
               </p>
               <p>
@@ -195,10 +195,10 @@ const About: React.FC = () => {
           >
             <StyledPic>
               <img 
-                src="https://via.placeholder.com/300" 
-                alt="Hassan" 
+                src="../assets/avatar/user.jpg" 
+                alt="Developer at work" 
                 width="300" 
-                height="300"
+                height="400"
               />
             </StyledPic>
           </motion.div>

@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaFileDownload, FaLinkedin } from 'react-icons/fa';
 
-const HireMeContainer = styled.section`
+const HireMeContainer = styled.section<{ theme: any }>`
   padding: 100px 0;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
-const Container = styled.div`
+const Container = styled.div<{ theme: any }>`
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 `;
 
-const Section = styled(motion.div)`
+const Section = styled(motion.div)<{ theme: any }>`
   background: ${({ theme }) => theme.colors.backgroundLight};
   border-radius: ${({ theme }) => theme.borderRadius.lg};
   padding: 40px;
@@ -26,7 +26,7 @@ const Section = styled(motion.div)`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h1<{ theme: any }>`
   font-size: ${({ theme }) => theme.fontSize['4xl']};
   color: ${({ theme }) => theme.colors.text};
   text-align: center;
