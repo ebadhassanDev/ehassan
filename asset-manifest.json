@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/ehassan/static/js/main.c2c92ea9.js",
+    "main.js": "/ehassan/static/js/main.994266d3.js",
     "static/media/ebad_hassan.png": "/ehassan/static/media/ebad_hassan.d9450663cd2444bfd239.png",
     "static/media/Ebad_Hassan.pdf": "/ehassan/static/media/Ebad_Hassan.6837ead9ab571921c0c3.pdf",
     "index.html": "/ehassan/index.html",
-    "main.c2c92ea9.js.map": "/ehassan/static/js/main.c2c92ea9.js.map"
+    "main.994266d3.js.map": "/ehassan/static/js/main.994266d3.js.map"
   },
   "entrypoints": [
-    "static/js/main.c2c92ea9.js"
+    "static/js/main.994266d3.js"
   ]
 }
