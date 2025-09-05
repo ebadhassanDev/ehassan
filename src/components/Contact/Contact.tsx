@@ -188,10 +188,10 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - Replace these with your actual EmailJS credentials
-      const serviceId = 'service_99q4uuz'; // Replace with your actual service ID
-      const templateId = 'template_x9ugvpx'; // Replace with your actual template ID
-      const publicKey = '0pUyG9fpoCR1v-X4A'; // Replace with your actual public key
+      
+      const serviceId = 'service_99q4uuz'; 
+      const templateId = 'template_x9ugvpx';
+      const publicKey = '0pUyG9fpoCR1v-X4A'; 
       
       // Initialize EmailJS
       emailjs.init(publicKey);

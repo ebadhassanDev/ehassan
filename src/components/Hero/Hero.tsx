@@ -158,7 +158,7 @@ const Hero: React.FC = () => {
     <HeroSection id="home">
       <SocialLinks>
         <SocialLink 
-          href="https://github.com/yourusername" 
+          href="https://github.com/ebadhassandev" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -166,7 +166,7 @@ const Hero: React.FC = () => {
           <FaGithub />
         </SocialLink>
         <SocialLink 
-          href="https://linkedin.com/in/yourusername" 
+          href="https://www.linkedin.com/in/ebad-hassan-5272a5192/" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -174,7 +174,7 @@ const Hero: React.FC = () => {
           <FaLinkedin />
         </SocialLink>
         <SocialLink 
-          href="https://twitter.com/yourusername" 
+          href="https://twitter.com/ebadhassan71" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Twitter"
@@ -199,7 +199,7 @@ const Hero: React.FC = () => {
             </p>
           </Description>
           <Button 
-            href="#work" 
+            href="#projects" 
             className="btn"
           >
             Check out my work!

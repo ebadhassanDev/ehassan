@@ -4,8 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
-const resumeFile = '/Resume/Ebad_Hassan.pdf';
+import resumeFile from '../../assets/Resume/Ebad_Hassan.pdf';
 
 const Nav = styled.nav`
   position: fixed;
@@ -54,6 +53,7 @@ const NavLinks = styled.ul<{ isOpen: boolean }>`
   height: 100%;
   align-items: center;
   margin-left: auto;
+  counter-reset: item 0;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     position: fixed;
@@ -80,6 +80,7 @@ const NavItem = styled.li`
   align-items: center;
   height: 100%;
   position: relative;
+  counter-increment: item;
   
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin: 0 0 20px 0;
@@ -98,7 +99,6 @@ const NavLink = styled(ScrollLink)`
   
   &::before {
     content: '0' counter(item, decimal) '.';
-    counter-increment: item;
     margin-right: 5px;
     color: ${({ theme }) => theme.colors.accent};
     font-family: ${({ theme }) => theme.fonts.secondary};
@@ -207,8 +207,8 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { to: 'about', text: 'About' },
-    { to: 'experience', text: 'Experience' },
-    { to: 'work', text: 'Work' },
+    { to: 'skills', text: 'Skills' },
+    { to: 'projects', text: 'Work' },
     { to: 'blog', text: 'Blog', isPage: true },
     { to: 'hire-me', text: 'Hire Me' },
     { to: 'contact', text: 'Contact' },
@@ -218,7 +218,7 @@ const Navbar: React.FC = () => {
     <>
       <Nav style={isScrolled ? { height: '70px', boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)' } : {}}>
         <Logo>
-          <ScrollLink to="home" smooth={true} duration={500}>
+          <ScrollLink to="home" smooth={true} duration={500} offset={-80}>
             &lt;EH/&gt;
           </ScrollLink>
         </Logo>
@@ -239,7 +239,7 @@ const Navbar: React.FC = () => {
                   {item.text}
                 </Link>
               ) : (
-                <ScrollLink
+                <NavLink
                   to={item.to}
                   smooth={true}
                   duration={500}
@@ -249,7 +249,7 @@ const Navbar: React.FC = () => {
                   onClick={closeMenu}
                 >
                   {item.text}
-                </ScrollLink>
+                </NavLink>
               )}
             </NavItem>
           ))}
