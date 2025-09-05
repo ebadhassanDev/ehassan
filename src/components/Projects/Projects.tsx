@@ -115,6 +115,16 @@ const ProjectLink = styled.a`
   }
 `;
 
+// Simple inline SVG placeholder (data URL)
+const fallbackImage =
+  'data:image/svg+xml;utf8,' +
+  encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
+      <rect width="100%" height="100%" fill="#0a192f"/>
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#64ffda" font-family="Arial, sans-serif" font-size="36">Image unavailable</text>
+    </svg>
+  `);
+
 const projects = [
   {
     title: 'E-Commerce Platform',
@@ -190,8 +200,9 @@ const Projects: React.FC = () => {
             >
               <ProjectImage>
                 <img 
-                  src={project.image} 
-                  alt={project.title} 
+                  src={project.image}
+                  alt={project.title}
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackImage; }}
                 />
               </ProjectImage>
               <ProjectContent>

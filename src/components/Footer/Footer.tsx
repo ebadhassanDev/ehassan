@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
     <FooterContainer>
       <SocialLinks>
         <SocialLink 
-          href="https://github.com/yourusername" 
+          href="https://github.com/ebadhassandev" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           <FaGithub />
         </SocialLink>
         <SocialLink 
-          href="https://linkedin.com/in/yourusername" 
+          href="https://www.linkedin.com/in/ebad-hassan-5272a5192/" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
           <FaLinkedin />
         </SocialLink>
         <SocialLink 
-          href="https://twitter.com/yourusername" 
+          href="https://twitter.com/ebadhassan71" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Twitter"
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
         </SocialLink>
       </SocialLinks>
       <Copyright>
-        © {currentYear} Hassan. All rights reserved.
+        © {currentYear} Ebad Hassan. All rights reserved.
         <br />
         Built with React, TypeScript &amp; Styled Components
       </Copyright>

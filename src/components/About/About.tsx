@@ -1,4 +1,5 @@
 import React from 'react';
+import userAvatar from '../../assets/avatar/ebad_hassan.png';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
@@ -89,7 +90,7 @@ const SkillItem = styled.li`
 
 const StyledPic = styled.div`
   position: relative;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   
   &::before {
@@ -195,10 +196,10 @@ const About: React.FC = () => {
           >
             <StyledPic>
               <img 
-                src="../assets/avatar/user.jpg" 
+                src={userAvatar}
                 alt="Developer at work" 
-                width="300" 
-                height="400"
+                width="360" 
+                height="480"
               />
             </StyledPic>
           </motion.div>
