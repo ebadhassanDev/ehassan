@@ -194,16 +194,16 @@ const Hero: React.FC = () => {
           <Subtitle>I build things for the web.</Subtitle>
           <Description>
             <p>
-              I'm a C# developer specializing in building exceptional digital experiences. 
-              Currently, I'm focused on building accessible, human-centered products.
-            </p>
+            I'm a C# developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.</p>
           </Description>
-          <Button 
-            href="#projects" 
-            className="btn"
-          >
+          <div>
+            <Button href="#projects" className="btn">
             Check out my work!
-          </Button>
+            </Button>
+            <Button href="/hire-me" className="btn" style={{ marginLeft: 12 }}>
+              Hire Me
+            </Button>
+          </div>
         </motion.div>
       </HeroContent>
       

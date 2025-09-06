@@ -86,9 +86,9 @@ const Blog: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <BlogTitle>Blog</BlogTitle>
+          <BlogTitle>Blog: ASP.NET Core, C#, Angular Tutorials & Case Studies</BlogTitle>
           <BlogSubtitle>
-            Thoughts, tutorials, and insights about web development, programming, and technology.
+            Tutorials and insights on building scalable APIs with ASP.NET Core and C#, Angular frontends, EF Core with SQL Server, Azure Functions, Clean Architecture, and SaaS patterns.
           </BlogSubtitle>
         </BlogHeader>
         

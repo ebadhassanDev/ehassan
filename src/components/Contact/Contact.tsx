@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { title } from 'process';
 
 const ContactSection = styled.section`
   padding: 100px 0;
@@ -197,10 +198,11 @@ const Contact: React.FC = () => {
       emailjs.init(publicKey);
       
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         to_email: 'ebadhassan.dev@gmail.com',
         message: formData.message,
+        title: 'Client Request',
         reply_to: formData.email
       };
 

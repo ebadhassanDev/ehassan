@@ -219,7 +219,7 @@ const Navbar: React.FC = () => {
       <Nav style={isScrolled ? { height: '70px', boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)' } : {}}>
         <Logo>
           <ScrollLink to="home" smooth={true} duration={500} offset={-80}>
-            &lt;EH/&gt;
+            <span>&lt;EH/&gt;</span>
           </ScrollLink>
         </Logo>
 

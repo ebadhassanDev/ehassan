@@ -132,7 +132,7 @@ const projects = [
     technologies: ['C#', '.NET Core', 'React', 'SQL Server', 'Azure'],
     github: 'https://github.com/yourusername/ecommerce-platform',
     demo: 'https://ecommerce-demo.com',
-    image: 'https://via.placeholder.com/600x400/0a192f/64ffda?text=E-Commerce+Platform'
+    image: '/blogpost/cart.png'
   },
   {
     title: 'Task Management App',
@@ -178,7 +178,7 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <ProjectsSection id="projects">
+    <ProjectsSection id="projects" aria-label="ASP.NET Core, C#, Angular Projects and Case Studies">
       <ProjectsContainer>
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
@@ -186,7 +186,7 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Some Things I've Built
+          Projects: ASP.NET Core, C#, Angular (Case Studies)
         </motion.h2>
         
         <ProjectsGrid>
@@ -201,7 +201,7 @@ const Projects: React.FC = () => {
               <ProjectImage>
                 <img 
                   src={project.image}
-                  alt={project.title}
+                  alt={`Project: ${project.title} – Technologies: ${project.technologies.join(', ')} by .NET Full Stack Developer Ebad Hassan`}
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackImage; }}
                 />
               </ProjectImage>
