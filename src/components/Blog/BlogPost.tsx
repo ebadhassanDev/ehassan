@@ -156,7 +156,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, index }) => {
       <PostImage>
         <img 
           src={post.image} 
-          alt={post.title} 
+          alt={`${post.title} – Blog by .NET Full Stack Developer Ebad Hassan (ASP.NET Core, C#, Angular)`} 
           onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackImage; }}
         />
       </PostImage>

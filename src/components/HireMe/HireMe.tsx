@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaFileDownload, FaLinkedin } from 'react-icons/fa';
+import resumeFile from '../../assets/Resume/Ebad_Hassan.pdf';
 
 const HireMeContainer = styled.section<{ theme: any }>`
   padding: 100px 0;
@@ -14,7 +15,7 @@ const Container = styled.div<{ theme: any }>`
   padding: 0 20px;
 `;
 
-const Section = styled(motion.div)<{ theme: any }>`
+const Section = styled(motion.div) <{ theme: any }>`
   background: ${({ theme }) => theme.colors.backgroundLight};
   border-radius: ${({ theme }) => theme.borderRadius.lg};
   padding: 40px;
@@ -97,7 +98,7 @@ const Button = styled.a<{ primary?: boolean }>`
   font-size: ${({ theme }) => theme.fontSize.md};
   cursor: pointer;
   
-  ${({ primary, theme }) => primary 
+  ${({ primary, theme }) => primary
     ? `
       background-color: ${theme.colors.accent};
       color: ${theme.colors.background};
@@ -152,10 +153,10 @@ const HireMe: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Title>Hire Me</Title>
+          <Title>Hire a .NET Full Stack Developer – ASP.NET Core, C#, Angular</Title>
           <Subtitle>
-            I'm a .NET Full Stack Developer with 3+ years of experience in building scalable APIs, 
-            cloud integrations, and modern web applications. I'm currently open to remote 
+            I'm a .NET Full Stack Developer with 3+ years of experience in building scalable APIs,
+            cloud integrations, and modern web applications. I'm currently open to remote
             opportunities worldwide—whether freelance, contract, or full-time.
           </Subtitle>
 
@@ -199,15 +200,21 @@ const HireMe: React.FC = () => {
 
             <SectionTitle>Get In Touch</SectionTitle>
             <ButtonGroup>
-              <Button primary onClick={handleEmailClick}>
+              <Button
+                as="a"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ebadhassan.dev@gmail.com&su=Hire%20Me%20–%20Remote%20Developer%20Opportunity"
+                target="_blank"
+                rel="noopener noreferrer"
+                primary
+              >
                 <FaEnvelope /> Hire Me
               </Button>
-              <Button href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button href={resumeFile} target="_blank" rel="noopener noreferrer">
                 <FaFileDownload /> Download Resume
               </Button>
-              <Button 
-                href="https://linkedin.com/in/yourusername" 
-                target="_blank" 
+              <Button
+                href="https://www.linkedin.com/in/ebad-hassan-5272a5192/"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin /> LinkedIn

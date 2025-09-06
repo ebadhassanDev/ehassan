@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# GitHub Pages sitemap location
+Sitemap: https://ebadhassanDev.github.io/ehassan/sitemap.xml
