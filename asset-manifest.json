@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.js": "/ehassan/static/js/main.56807e84.js",
+    "main.js": "/ehassan/static/js/main.8478debf.js",
+    "static/media/console.png": "/ehassan/static/media/console.892660794f76c7ba2d20.png",
+    "static/media/net_core_app.png": "/ehassan/static/media/net_core_app.9e3f5975bab4873d9b6d.png",
+    "static/media/task_management.png": "/ehassan/static/media/task_management.3656ef6de07b82c8ed62.png",
+    "static/media/profile_portfolio.png": "/ehassan/static/media/profile_portfolio.b11055fef3ffca4853f2.png",
+    "static/media/cart.png": "/ehassan/static/media/cart.60a5a3d18f52e28e6280.png",
+    "static/media/meta_chatting.png": "/ehassan/static/media/meta_chatting.3d492170b127645c9199.png",
     "static/media/ebad_hassan.png": "/ehassan/static/media/ebad_hassan.d9450663cd2444bfd239.png",
     "static/media/Ebad_Hassan.pdf": "/ehassan/static/media/Ebad_Hassan.6837ead9ab571921c0c3.pdf",
     "index.html": "/ehassan/index.html",
-    "main.56807e84.js.map": "/ehassan/static/js/main.56807e84.js.map"
+    "main.8478debf.js.map": "/ehassan/static/js/main.8478debf.js.map"
   },
   "entrypoints": [
-    "static/js/main.56807e84.js"
+    "static/js/main.8478debf.js"
   ]
 }
