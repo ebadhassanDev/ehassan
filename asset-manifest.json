@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/ehassan/static/js/main.69da096a.js",
-    "static/media/console.png": "/ehassan/static/media/console.892660794f76c7ba2d20.png",
-    "static/media/net_core_app.png": "/ehassan/static/media/net_core_app.9e3f5975bab4873d9b6d.png",
-    "static/media/task_management.png": "/ehassan/static/media/task_management.3656ef6de07b82c8ed62.png",
-    "static/media/profile_portfolio.png": "/ehassan/static/media/profile_portfolio.b11055fef3ffca4853f2.png",
-    "static/media/cart.png": "/ehassan/static/media/cart.60a5a3d18f52e28e6280.png",
-    "static/media/meta_chatting.png": "/ehassan/static/media/meta_chatting.3d492170b127645c9199.png",
+    "main.js": "/ehassan/static/js/main.3338c04b.js",
+    "static/media/console.png": "/ehassan/static/media/console.8e719ab9f11205df2728.png",
+    "static/media/net_core_app.png": "/ehassan/static/media/net_core_app.7b9baa82af4dfeb9a846.png",
+    "static/media/task_management.png": "/ehassan/static/media/task_management.c3eaadc31f28ef461957.png",
+    "static/media/profile_portfolio.png": "/ehassan/static/media/profile_portfolio.88fa9c7234942f5eaa47.png",
+    "static/media/cart.png": "/ehassan/static/media/cart.4187d1c46eb5a79133a2.png",
+    "static/media/meta_chatting.png": "/ehassan/static/media/meta_chatting.16e2b1d4f842ca0e78b6.png",
     "static/media/ebad_hassan.png": "/ehassan/static/media/ebad_hassan.d9450663cd2444bfd239.png",
     "static/media/Ebad_Hassan.pdf": "/ehassan/static/media/Ebad_Hassan.6837ead9ab571921c0c3.pdf",
     "index.html": "/ehassan/index.html",
-    "main.69da096a.js.map": "/ehassan/static/js/main.69da096a.js.map"
+    "main.3338c04b.js.map": "/ehassan/static/js/main.3338c04b.js.map"
   },
   "entrypoints": [
-    "static/js/main.69da096a.js"
+    "static/js/main.3338c04b.js"
   ]
 }
