@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ehassan/static/css/main.61f2aa1b.css",
-    "main.js": "/ehassan/static/js/main.fb302bd4.js",
+    "main.js": "/ehassan/static/js/main.60599cc2.js",
     "static/media/console.png": "/ehassan/static/media/console.8e719ab9f11205df2728.png",
     "static/media/net_core_app.png": "/ehassan/static/media/net_core_app.7b9baa82af4dfeb9a846.png",
     "static/media/task_management.png": "/ehassan/static/media/task_management.c3eaadc31f28ef461957.png",
@@ -12,10 +12,10 @@
     "static/media/Ebad_Hassan.pdf": "/ehassan/static/media/Ebad_Hassan.6837ead9ab571921c0c3.pdf",
     "index.html": "/ehassan/index.html",
     "main.61f2aa1b.css.map": "/ehassan/static/css/main.61f2aa1b.css.map",
-    "main.fb302bd4.js.map": "/ehassan/static/js/main.fb302bd4.js.map"
+    "main.60599cc2.js.map": "/ehassan/static/js/main.60599cc2.js.map"
   },
   "entrypoints": [
     "static/css/main.61f2aa1b.css",
-    "static/js/main.fb302bd4.js"
+    "static/js/main.60599cc2.js"
   ]
 }
